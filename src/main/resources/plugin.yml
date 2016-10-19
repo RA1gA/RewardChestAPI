@@ -1,0 +1,88 @@
+name: ${project.artifactId}
+version: ${project.version}
+author: RA1gA
+website: https://twitter.com/raiga2525
+main: jp.mc.ra1ga.rewardchest.Main
+
+commands:
+  reward:
+    aliases: rw
+  rewarditem:
+    aliases: ri
+
+permissions:
+  reward.command:
+    description: Allows to use command.
+    default: true
+  reward.command.reward:
+    description: Allows to use reward command.
+    default: op
+  reward.command.reward.set:
+    description: Allows to use reward's set command.
+    default: op
+  reward.command.reward.add:
+    description: Allows to use reward's add command.
+    default: op
+  reward.command.reward.reset:
+    description: Allows to use reward's reset command.
+    default: op
+  reward.command.reward.remove:
+    description: Allows to use reward's remove command.
+    default: op
+  reward.command.reward.give:
+    description: Allows to use reward's give command.
+    default: op
+  reward.command.reward.list:
+    description: Allows to use reward's list command.
+    default: op
+  reward.command.reward.reload:
+    description: Allows to use reward's reload command.
+    default: op
+  'reward.command.reward.*':
+    description: All of reward permissions.
+    children:
+      reward.command: true
+      reward.command.reward: true
+      reward.command.reward.set: true
+      reward.command.reward.add: true
+      reward.command.reward.reset: true
+      reward.command.reward.remove: true
+      reward.command.reward.give: true
+      reward.command.reward.list: true
+      reward.command.reward.reload: true
+  reward.command.rewarditem:
+    description: Allows to use rewarditem command.
+    default: op
+  reward.command.rewarditem.set:
+    description: Allows to use rewarditem's set command.
+    default: op
+  reward.command.rewarditem.remove:
+    description: Allows to use rewarditem's remove command.
+    default: op
+  reward.command.rewarditem.list:
+    description: Allows to use rewarditem's list command.
+    default: op
+  'reward.command.rewarditem.*':
+    description: All of rewarditem permissions.
+    children:
+      reward.command: true
+      reward.command.rewarditem: true
+      reward.command.rewarditem.set: true
+      reward.command.rewarditem.remove: true
+      reward.command.rewarditem.list: true
+  'reward.command.rewarditem.*':
+    description: All of reward & rewarditem permissions.
+    children:
+      reward.command: true
+      reward.command.reward: true
+      reward.command.reward.set: true
+      reward.command.reward.add: true
+      reward.command.reward.reset: true
+      reward.command.reward.remove: true
+      reward.command.reward.give: true
+      reward.command.reward.list: true
+      reward.command.reward.reload: true
+      reward.command.rewarditem: true
+      reward.command.rewarditem.set: true
+      reward.command.rewarditem.remove: true
+      reward.command.rewarditem.list: true

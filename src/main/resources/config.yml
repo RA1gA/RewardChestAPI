@@ -1,0 +1,9 @@
+Rewards:
+  Test:
+    LimitedDuration: 1000
+    LimitedDistance: 20
+    MinAmount: 2
+    MaxAmount: 5
+    Items:
+
+Items:
