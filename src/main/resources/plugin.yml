@@ -70,7 +70,7 @@ permissions:
       reward.command.rewarditem.set: true
       reward.command.rewarditem.remove: true
       reward.command.rewarditem.list: true
-  'reward.command.rewarditem.*':
+  'reward.command.*':
     description: All of reward & rewarditem permissions.
     children:
       reward.command: true
